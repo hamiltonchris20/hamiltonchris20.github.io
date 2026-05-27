@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-label="Schematic galactic disk with spiral perturbation">
-  <rect width="640" height="360" fill="#f5f4f1"/>
-  <ellipse cx="320" cy="180" rx="220" ry="70" fill="none" stroke="#d0cdc6" stroke-width="2"/>
-  <ellipse cx="320" cy="180" rx="140" ry="42" fill="none" stroke="#c5c2bb" stroke-width="1.5"/>
-  <path d="M120 180 Q200 120 320 180 Q440 240 520 180" fill="none" stroke="#355e3b" stroke-width="2.5"/>
-  <path d="M140 180 Q240 90 320 180 Q400 270 500 180" fill="none" stroke="#355e3b" stroke-width="1.2" opacity="0.45"/>
-  <circle cx="320" cy="180" r="8" fill="#355e3b" opacity="0.85"/>
-  <text x="320" y="330" text-anchor="middle" fill="#6b6b6b" font-family="Titillium Web, sans-serif" font-size="13">Galactokinetics — disk response regimes</text>
-</svg>
