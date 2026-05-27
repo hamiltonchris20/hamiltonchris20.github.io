@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Chris Hamilton — Assistant Professor, Department of Astrophysical Sciences, Princeton University." />
+  <title>Chris Hamilton — Astrophysicist | Princeton University</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="page-home bg-paper text-black font-serif subpixel-antialiased min-h-screen flex flex-col">
+  <div class="site-frame flex-1">
+  <header class="deco-header bg-paper backdrop-blur-sm">
+    <nav class="page-content py-3 flex items-center justify-between" aria-label="Main navigation">
+      <a href="index.html" class="site-title">Chris Hamilton</a>
+      <ul class="hidden md:flex items-center gap-6 deco-nav text-muted">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="research.html" class="nav-link">Research</a></li>
+        <li><a href="group.html" class="nav-link">Group</a></li>
+        <li><a href="publications.html" class="nav-link">Publications</a></li>
+        <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+      </ul>
+      <button id="menu-btn" type="button" class="md:hidden text-accent-pale p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-rule bg-surface px-6 py-2 page-content">
+      <ul class="deco-nav text-sm tracking-wide space-y-2 text-center text-muted">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="group.html">Group</a></li>
+        <li><a href="publications.html">Publications</a></li>
+        <li><a href="teaching.html">Teaching</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="page-content py-5 md:py-7">
+      <div class="grid md:grid-cols-[220px_1fr] gap-5 md:gap-6 items-start">
+        <figure class="mx-auto md:mx-0 w-full max-w-[220px]">
+          <img
+            src="images/hamilton.jpg"
+            alt="Chris Hamilton"
+            width="220"
+            height="330"
+            class="deco-photo w-full h-auto aspect-[2/3]"
+          />
+        </figure>
+
+        <div class="prose-tight text-black">
+          <h1 class="page-title deco-heading">Welcome</h1>
+
+          <p>
+            I am a theoretical astrophysicist. Starting August 1, 2026 I will be Assistant Professor in the
+            <a href="https://web.astro.princeton.edu/" target="_blank" rel="noopener">Department of Astrophysical Sciences</a>
+            at
+            <a href="https://www.princeton.edu/" target="_blank" rel="noopener">Princeton University</a>.
+          </p>
+          <p>
+            Previously, from 2021&ndash;2026 I was a member in
+            <a href="https://www.ias.edu/sns/astrophysics" target="_blank" rel="noopener">Astrophysics</a>
+            in the
+            <a href="https://www.ias.edu/sns" target="_blank" rel="noopener">School of Natural Sciences</a>
+            at the
+            <a href="https://www.ias.edu/" target="_blank" rel="noopener">Institute for Advanced Study</a> in Princeton (as a
+            <a href="https://www.ias.edu/sns/fellowships" target="_blank" rel="noopener">John N. Bahcall Fellow</a>
+            from 2023&ndash;2026). From 2017&ndash;2021 I was a PhD student in the
+            <a href="http://www.damtp.cam.ac.uk/research/astro/" target="_blank" rel="noopener">Astrophysics group</a>
+            at
+            <a href="http://www.damtp.cam.ac.uk/" target="_blank" rel="noopener">DAMTP, University of Cambridge</a>,
+            supervised by
+            <a href="https://www.damtp.cam.ac.uk/person/rrr34" target="_blank" rel="noopener">Dr Roman Rafikov</a>
+            and a member of
+            <a href="http://emma.cam.ac.uk/" target="_blank" rel="noopener">Emmanuel College</a>;
+            for my thesis I was awarded the International Astronomical Union&rsquo;s
+            <a href="https://www.ias.edu/news/2022/chris-hamilton-iau-2021-phd-prize" target="_blank" rel="noopener">2021 PhD Prize</a>.
+            From 2013&ndash;2017 I was an undergraduate in Physics at
+            <a href="https://www.merton.ox.ac.uk/" target="_blank" rel="noopener">Merton College, Oxford</a>.
+          </p>
+          <p>
+            I study astrophysical dynamics, from the evolution of disk galaxies (including
+            <a href="https://arxiv.org/abs/2507.16950" target="_blank" rel="noopener">spiral structure</a>,
+            <a href="https://arxiv.org/abs/2208.03855" target="_blank" rel="noopener">bar&ndash;halo friction</a>,
+            <a href="https://arxiv.org/abs/2408.03366" target="_blank" rel="noopener">Galactokinetics</a>), to the origin of gravitational wave sources (in
+            <a href="https://arxiv.org/abs/1907.00994" target="_blank" rel="noopener">star clusters</a>,
+            <a href="https://arxiv.org/abs/2312.17319" target="_blank" rel="noopener">galactic nuclei</a>,
+            <a href="https://arxiv.org/abs/2011.14947" target="_blank" rel="noopener">hierarchical triples</a>), to wide stellar binaries (their interactions with the
+            <a href="https://arxiv.org/abs/2202.01307" target="_blank" rel="noopener">Galactic tide</a>,
+            <a href="https://arxiv.org/abs/2303.15531" target="_blank" rel="noopener">other stars</a>, and their
+            <a href="https://arxiv.org/abs/2205.05690" target="_blank" rel="noopener">weird observed properties</a>), to the
+            <a href="https://arxiv.org/abs/2402.13322" target="_blank" rel="noopener">kinetic theory of stellar systems</a> (and its
+            <a href="https://arxiv.org/abs/2402.13322" target="_blank" rel="noopener">connection with plasma physics</a>). You can learn more about my research
+            <a href="research.html">here</a>, and about my Princeton collaborators
+            <a href="group.html">here</a>.
+          </p>
+
+          <p>
+            I am also a co-organizer of the
+            <a href="https://web.astro.princeton.edu/academic/undergraduate-summer-research-program-usrp" target="_blank" rel="noopener">Undergraduate Summer Research Program</a>
+            in the Department of Astrophysical Sciences, and an advisory board member of the
+            <a href="https://www.cambridge.org/core/journals/journal-of-plasma-physics" target="_blank" rel="noopener"><em>Journal of Plasma Physics</em></a>.
+          </p>
+
+          <h2 class="topic-heading">Recent group highlights</h2>
+          <ul class="highlights-list text-black leading-snug">
+            <li>
+              <a href="https://arxiv.org/abs/2605.21579" target="_blank" rel="noopener">The first study of radial heating and migration in a realistic interstellar medium</a>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2507.16950" target="_blank" rel="noopener">A unified theory of linear spiral structure in stellar disks</a>
+            </li>
+            <li>
+              <a href="https://arxiv.org/abs/2312.17319" target="_blank" rel="noopener">Boosting the rate of black hole mergers in galactic nuclei</a>
+            </li>
+          </ul>
+
+          <h2 class="topic-heading">Contact</h2>
+          <div class="contact-block">
+            <p>
+              Chris Hamilton, Department of Astrophysical Sciences, Princeton University, 4 Ivy Lane, Princeton, New Jersey 08544, United States
+            </p>
+            <p>
+              <a href="mailto:chamilton@princeton.edu">chamilton@princeton.edu</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="deco-footer py-2 text-sm text-muted">
+    <div class="page-content py-4">&copy; 2026 Chris Hamilton</div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  </div>
+</body>
+</html>

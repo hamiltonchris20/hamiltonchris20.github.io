@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Research on galactic dynamics, kinetic theory, compact objects, and wide binaries — Chris Hamilton." />
+  <title>Research — Chris Hamilton</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="js/tailwind-config.js"></script>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body class="bg-paper text-black font-serif subpixel-antialiased min-h-screen flex flex-col">
+  <div class="site-frame flex-1">
+  <header class="deco-header bg-paper backdrop-blur-sm">
+    <nav class="page-content py-3 flex items-center justify-between" aria-label="Main navigation">
+      <a href="index.html" class="site-title">Chris Hamilton</a>
+      <ul class="hidden md:flex items-center gap-6 deco-nav text-muted">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="research.html" class="nav-link">Research</a></li>
+        <li><a href="group.html" class="nav-link">Group</a></li>
+        <li><a href="publications.html" class="nav-link">Publications</a></li>
+        <li><a href="teaching.html" class="nav-link">Teaching</a></li>
+      </ul>
+      <button id="menu-btn" type="button" class="md:hidden text-accent-pale p-2" aria-expanded="false" aria-controls="mobile-menu" aria-label="Toggle menu">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="square" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </nav>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-rule bg-surface px-6 py-2 page-content">
+      <ul class="deco-nav text-sm tracking-wide space-y-2 text-center text-muted">
+        <li><a href="index.html" >Home</a></li>
+        <li><a href="research.html">Research</a></li>
+        <li><a href="group.html">Group</a></li>
+        <li><a href="publications.html" >Publications</a></li>
+        <li><a href="teaching.html" >Teaching</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="flex-1">
+
+    <section class="page-content py-5 md:py-7 border-b border-rule/10">
+      <h1 class="page-title mb-2 deco-heading">Research</h1>
+      <h2 class="section-title mb-2">Overview</h2>
+      <p class="text-black max-w-3xl">
+        I am a <strong>dynamicist</strong> working to understand and predict the evolution of astrophysical systems. My current focus is on <strong>galactic disks</strong>: building much stronger connections between fundamental theory, numerical simulations, and the extraordinary data now provided by surveys like Gaia, SDSS, and JWST. I am also working on projects related to <strong>compact objects</strong> in star clusters, to ultra-wide <strong>stellar binaries</strong> in the Galaxy, and beyond.
+      </p>
+      <p class="text-black mt-2 max-w-3xl">
+        Much of this work relies on Hamiltonian mechanics, kinetic theory, and nonequilibrium statistical mechanics, as well as tailored numerical simulations. The goal is always to produce what one observer friend called <strong>&lsquo;useful theory&rsquo;</strong>&mdash;scientific results that are physically and mathematically robust, but are grounded in data and help to solve real astronomical problems.
+      </p>
+      <p class="text-black mt-2 max-w-3xl">
+        Below you can find descriptions of some of the projects I've been involved in.
+      </p>
+    </section>
+
+    <section id="disks" class="deco-section py-5 md:py-7 border-b border-rule/10">
+      <div class="page-content">
+        <h2 class="section-title mb-2">1. Dynamics of galactic disks</h2>
+
+        <div class="text-black leading-snug prose-tight space-y-0 mb-2">
+          <p>
+            Disk galaxies are the setting for many of the deepest puzzles in modern astrophysics. They are complex machines consisting of stars, gas, and dark matter, but many of their detailed properties remain mysterious. In particular, when the billions of stars in a galactic disk act together, they can drive complex, collective gravitational dynamics—bar formation, spiral structure, warps, orbital heating, and migration—that would never be guessed from the motion of a single star. This behavior, in turn, drives the transport of gas and stars across the disk, determining the rate at which the supermassive black hole is fed; it helps shape the chemical makeup of the galaxy, dictating where the next generation of stars and planets are born and what their traits will be. It is these collective gravitational dynamics that we are trying to understand.          </p>
+        </div>
+
+        <div class="prose-tight space-y-0 text-black leading-snug">
+          <div class="grid md:grid-cols-2 gap-5 md:gap-6 items-start">
+            <figure class="research-figure order-2 md:order-2 md:mt-3">
+              <img src="images/galactokinetics-wavelength.png" alt="Wavelength regimes in Galactokinetics" width="1058" height="792" loading="lazy" />
+              <figcaption class="text-muted text-xs px-3 py-2 border-t border-rule/10">Galactokinetics: categorizing fluctuations by wavelength (Hamilton, Modak &amp; Tremaine 2026)</figcaption>
+            </figure>
+            <div class="order-1 md:order-1 prose-tight space-y-0">
+              <div class="research-highlight">
+                <h3>Galactokinetics</h3>
+                <p>
+                  The analytic foundations of disk dynamics were laid down decades ago, but the resulting theory was complicated and could rarely be used to calculate anything. Technically, we are dealing with kinetic theory in angle&ndash;action variables, and the intricate mathematical formalism can render even idealized problems rather intractable. In the meantime, simulators and observers of disk galaxies raced ahead, unveiling beautiful and complex behavior that theoreticians have been unable to explain. Our Galactokinetics series aims to close this gap.
+                </p>
+                <p>
+                  In
+                  <a href="https://arxiv.org/abs/2408.03366" target="_blank" rel="noopener">Hamilton, Modak &amp; Tremaine (2026)</a>
+                  we approached the kinetic theory anew, splitting gravitational potential fluctuations into asymptotic wavelength regimes relative to stars' guiding radii and epicyclic amplitudes, analogous to plasma gyrokinetics. This simplifies the kinetic theory dramatically in long- and short-wavelength asymptotic regimes, and these two limits join smoothly at intermediate wavelengths. In
+                  <a href="https://arxiv.org/abs/2507.16950" target="_blank" rel="noopener">Hamilton, Modak &amp; Tremaine (2025)</a>
+                  we extended the formalism to include the self-consistent gravitational potential of the perturbed disk. This allowed us to unify many classic linear studies of spiral structure (Lindblad-Kalnajs, Julian-Toomre, Lin-Shu-Kalnajs, Sellwood-Carlberg) under a single theoretical framework.
+                </p>
+              </div>
+            </div>
+          </div>
+            <div class="research-highlight extra-break">
+              <h3>Bars</h3>
+              <p>
+                Galactic bars spin down because of resonant interactions between the bar&rsquo;s rotation and the orbits of dark matter particles. The classic theories of this delicate bar-halo friction process routinely ignored the fact that dark matter particles do not simply orbit in a smooth potential, but also experience random &lsquo;diffusive&rsquo; kicks from other passing dark matter clumps, gas clouds, etc. In
+                <a href="https://arxiv.org/abs/2208.03855" target="_blank" rel="noopener">Hamilton et al. (2023)</a>
+                we quantified the impact of this diffusion on bar-halo friction. The results are important not only for real galaxies but also for analyzing cosmological simulations which purport to simulate &lsquo;collisionless&rsquo; dynamics. This paper was heavily inspired by classic papers in plasma physics, and has subsequently been used by plasma fusion theorists in studies of alpha particle transport.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid md:grid-cols-2 gap-5 md:gap-6 items-start">
+            <figure class="research-figure order-2 md:order-2">
+              <img src="images/ism-transport.png" alt="ISM-driven radial heating and migration" width="785" height="659" loading="lazy" />
+              <figcaption class="text-muted text-xs px-3 py-2 border-t border-rule/10">ISM-driven orbital heating and migration in TIGRESS-NCR simulations (Modak, Hamilton, Ostriker &amp; Tremaine 2026)</figcaption>
+            </figure>
+            <div class="order-1 md:order-1 prose-tight space-y-0">
+              <div class="research-highlight">
+                <h3>ISM-driven transport</h3>
+                <p>
+                  The 75-year-old paradigm of Spitzer &amp; Schwarzschild (1951) posited the way in which stars&rsquo orbits are heated by interactions with localized compact gas clouds. In
+                  <a href="https://arxiv.org/abs/2605.21579" target="_blank" rel="noopener">Modak, Hamilton, Ostriker &amp; Tremaine (2026)</a>
+                  we integrated test particles through realistic, time-dependent TIGRESS-NCR magnetohydrodynamic simulations of the interstellar medium (ISM), finding radial heating, radial migration, and vertical heating behavior in complete contrast with the classic picture. We were able to understand all the scalings using the Galactokinetic formalism described above.
+                  In short, the ISM may produce as much as half of all orbital transport in Milky Way-like disk galaxies, and theoretical and numerical calculations that do not include a sufficiently realistic ISM may need to be revised.
+                </p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="mergers" class="deco-section py-5 md:py-7 border-b border-rule/10 bg-surface/30">
+      <div class="page-content">
+        <h2 class="section-title mb-2">2. Dynamics of compact objects and gravitational wave sources</h2>
+
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6 items-start mb-2">
+          <figure class="research-figure order-2 md:order-2">
+            <img src="images/compact-mergers.png" alt="Binary evolution in a galactic nucleus" width="1200" height="660" loading="lazy" />
+            <figcaption class="text-muted text-xs px-3 py-2 border-t border-rule/10">Synergy between tidal fields and stellar flybys in galactic nuclei (Winter-Granic et al. 2024)</figcaption>
+          </figure>
+          <div class="order-1 md:order-1 prose-tight space-y-0 text-black leading-snug justify-copy">
+            <p>
+              LIGO/Virgo detects binary black-hole mergers at a rate far too high for isolated binaries to explain: environmental dynamics must dominate. In graduate work I developed a secular theory for binaries in general axisymmetric potentials
+              (<a href="https://arxiv.org/abs/1902.01344" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2019a)</a>;
+              <a href="https://arxiv.org/abs/1902.01345" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2019b)</a>;
+              <a href="https://arxiv.org/abs/2011.14947" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2021)</a>;
+              <a href="https://arxiv.org/abs/2306.03703" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2024)</a>).
+              The key insight is that embedding a binary in any such potential creates an effective three-body problem: the host potential exerts a tidal torque that can reshape the binary eccentricity. Lidov&ndash;Kozai dynamics, Oort-cloud tides, and cluster torques are unified limits of the same mechanism.
+            </p>
+          </div>
+        </div>
+
+        <div class="prose-tight space-y-0 text-black leading-snug">
+          <div class="research-highlight">
+            <h3>Cluster tides &amp; eccentricity-driven mergers</h3>
+            <p>
+              Tidal fields in globular and nuclear star clusters can periodically drive binary eccentricities to very high values, opening a new gravitational-wave merger channel
+              (<a href="https://arxiv.org/abs/1907.00994" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2019)</a>;
+              <a href="https://arxiv.org/abs/2207.02069" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2022)</a>).
+              This PhD work is summarized in the thesis
+              <a href="https://www.repository.cam.ac.uk/items/68d29005-1efa-4fb7-8d7f-5938182685e8" target="_blank" rel="noopener"><em>Secular Dynamics of Binaries in Stellar Clusters</em></a>
+              (Cambridge, 2021).
+            </p>
+          </div>
+          <div class="research-highlight extra-break">
+            <h3>Synergy in galactic nuclei</h3>
+            <p>
+              Neither cluster tides nor stellar flybys alone account for observed merger rates. In
+              <a href="https://arxiv.org/abs/2312.17319" target="_blank" rel="noopener">Winter-Granic et al. (2024)</a>
+              we showed that their combined effect greatly enhances mergers in galactic nuclei&mdash;a channel invisible when either process is modeled in isolation.
+            </p>
+          </div>
+          <div class="research-highlight extra-break">
+            <h3>Nonadiabatic phase space jumps in hierarchical triples</h3>
+            <p>
+              All (semi-)analytic theories of hierarchical triple dynamics are based on the (near-)conservation of certain adiabatic invariants related to the binary&rsquo;s angular momentum and energy. In
+              <a href="https://arxiv.org/abs/2306.03703" target="_blank" rel="noopener">Hamilton &amp; Rafikov (2024)</a>
+              and Klein &amp; Hamilton (2026, in prep.) we showed that these &lsquo;invariants&rsquo; can be completely broken and that binaries can explore much more of phase space than previously assumed. This has significant implications for the merger rate of binary black holes, the formation rate of hot Jupiters, and so on, the details of which are still being worked out.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="binaries" class="deco-section py-5 md:py-7 border-b border-rule/10">
+      <div class="page-content">
+        <h2 class="section-title mb-2">3. Wide stellar binaries in the Milky Way</h2>
+
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6 items-start mb-2">
+          <figure class="research-figure order-2 md:order-2">
+            <img src="images/hamilton-modak-2024-fig1.png" alt="Key timescales in the dynamical evolution of wide binaries" width="636" height="471" loading="lazy" />
+            <figcaption class="text-muted text-xs px-3 py-2 border-t border-rule/10">Key timescales in the dynamical evolution of wide binaries (Hamilton &amp; Modak, 2024)</figcaption>
+          </figure>
+          <div class="order-1 md:order-1 text-black leading-snug prose-tight space-y-0 justify-copy">
+            <p>
+              Binary-star studies are one of the major successes of <em>Gaia</em>. In particular, ultra-wide stellar binaries (semimajor axes &gt; 1000&nbsp;AU) have reasserted themselves as key probes of the Galactic environment, of dark matter substructure, and even of our understanding of gravity itself. Wide binaries are also a theorist&rsquo;s dream: a system which in isolation is exactly solvable, and whose dynamical evolution due to (i) stochastic kicks from passing stars, molecular clouds, etc., and (ii) secular torques from the Galactic tide, can be predicted beautifully with perturbation theory. But we do not understand how these systems form, and there are various observational puzzles surrounding them that remain to be explained.
+            </p>
+          </div>
+        </div>
+
+        <div class="prose-tight space-y-0 text-black leading-snug">
+          <div class="research-highlight">
+            <h3>Superthermal eccentricities</h3>
+            <p>
+              My research has focused on the highly unusual &lsquo;superthermal&rsquo; distribution of wide-binary eccentricities (meaning there is an excess of very highly eccentric binaries compared with the naive &lsquo;thermal&rsquo; expectation) discovered in <em>Gaia</em> data. With Shaunak Modak, a graduate student at Princeton, we proved analytically that neither the Galactic tide nor scattering from passing stars can be responsible for producing this distribution
+              (<a href="https://arxiv.org/abs/2202.01307" target="_blank" rel="noopener">Hamilton (2022)</a>;
+              <a href="https://arxiv.org/abs/2303.15531" target="_blank" rel="noopener">Modak &amp; Hamilton (2023)</a>;
+              <a href="https://arxiv.org/abs/2311.04352" target="_blank" rel="noopener">Hamilton &amp; Modak (2024)</a>).
+              Instead, wide binaries must be born even more eccentric on average than they are observed today. I helped to propose a formation mechanism involving star formation in the turbulent ISM that satisfies this requirement
+              (<a href="https://arxiv.org/abs/2303.16224" target="_blank" rel="noopener">Xu et al. (2023)</a>).
+              These theories also allow for several new predictions, such as the dependence of the eccentricity distribution on binary age and Galactocentric orbit, which can be tested with future data releases.
+            </p>
+          </div>
+          <div class="research-highlight extra-break">
+            <h3>Twin binaries</h3>
+            <p>
+              But the mysteries of wide binaries keep on growing: in
+              <a href="https://arxiv.org/abs/2205.05690" target="_blank" rel="noopener">Hwang et al. (2022)</a>
+              we showed that twin wide binaries (those where the two stars have very similar masses) are even more eccentric still, perhaps pointing to a circumbinary disk origin.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="kinetic" class="deco-section py-5 md:py-7">
+      <div class="page-content">
+        <h2 class="section-title mb-2">4. Kinetic theory of stellar systems and plasmas</h2>
+
+        <div class="grid md:grid-cols-2 gap-5 md:gap-6 items-start mb-2">
+          <figure class="research-figure order-2 md:order-2">
+            <img src="images/kinetic-theory.png" alt="Collisional relaxation in stellar and plasma systems" width="640" height="480" loading="lazy" />
+            <figcaption class="text-muted text-xs px-3 py-2 border-t border-rule/10">From Hamilton &amp; Fouvry (2024)</figcaption>
+          </figure>
+          <div class="order-1 md:order-1 prose-tight space-y-0 text-black leading-snug justify-copy">
+            <p>
+              For most of the systems I work on, the predominant force is gravity. However, given the similarity between the Newtonian gravitational force and the Coulomb electrical force, many gravitational dynamics problems have analogues in plasma physics. I have co-authored a 66-page tutorial article, by invitation of the journal <em>Physics of Plasmas</em>, explaining the links between these two subjects
+              (<a href="https://arxiv.org/abs/2402.13322" target="_blank" rel="noopener">Hamilton &amp; Fouvry 2024</a>).
+            </p>
+          </div>
+        </div>
+
+        <div class="prose-tight space-y-0 text-black leading-snug">
+          <div class="research-highlight">
+            <h3>Borrowing from plasma physics</h3>
+            <p>
+              Furthermore, I have made a habit of stealing plasma results and applying them to stellar-dynamical problems: for example, I provided the simplest derivation of the Balescu-Lenard collision operator for stellar systems
+              (<a href="https://arxiv.org/abs/2007.07291" target="_blank" rel="noopener">Hamilton 2021</a>),
+              extended it to systems with weakly damped modes
+              (<a href="https://arxiv.org/abs/2011.14812" target="_blank" rel="noopener">Hamilton &amp; Heinemann 2020</a>,
+              <a href="https://arxiv.org/abs/2304.07275" target="_blank" rel="noopener">Hamilton &amp; Heinemann 2023</a>),
+              and applied it to globular clusters (<a href="https://arxiv.org/abs/1803.11091" target="_blank" rel="noopener">Hamilton et al. (2018)</a> and <a href="https://arxiv.org/abs/2103.10165" target="_blank" rel="noopener">Fouvry et al. (2021)</a>).
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+    <footer class="deco-footer py-2 text-sm text-muted">
+    <div class="page-content py-4 flex justify-between">
+      <span>© 2026 Chris Hamilton</span>
+      <a href="index.html" class="nav-link">Home</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  </div>
+</body>
+</html>
